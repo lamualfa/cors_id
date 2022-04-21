@@ -1,9 +1,10 @@
 # Panduan singkat mengatasi CORS di berbagai macam aplikasi
 
-Mayoritas CORS terjadi di browser dan disebabkan oleh server/backend/api yang kamu gunakan di website tersebut. Untuk mengatasi nya, silahkan ikuti panduan singkat berikut. Pilih berdasarkan teknologi apa yang kamu gunakan di server/backend/api kamu.
+Mayoritas CORS terjadi di browser dan disebabkan oleh _server/backend/api_ yang kamu gunakan di website tersebut. Untuk mengatasi nya, silahkan ikuti panduan singkat berikut. Pilih berdasarkan teknologi apa yang kamu gunakan di _server/backend/api_ kamu.
 
-- Saya menggunakan server/backend/api eksternal? **[Gunakan cara cepat](#cara-cepat)**.
-- Saya tidak tahu teknologi apa yang server/backend/api eksternal saya gunakan? **[Gunakan cara cepat](#cara-cepat)**.
+- Saya menggunakan _server/backend/api_ eksternal? **[Gunakan cara cepat](#cara-cepat)**.
+- Saya tidak tahu teknologi apa yang _server/backend/api_ eksternal saya gunakan? **[Gunakan cara cepat](#cara-cepat)**.
+- Teknologi yang saya gunakan belum ada? **[Buat issue](https://github.com/lamualfa/cors_id/issues/new)** atau **[buat pull request](https://github.com/lamualfa/cors_id/pulls)** jika berkenan.
 
 ![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
 
@@ -78,6 +79,8 @@ fastify.register(require("fastify-cors"), {
 })
 ```
 
+![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
+
 ## Cara cepat
 
 ##### Production
@@ -99,3 +102,7 @@ https://addons.mozilla.org/id/firefox/addon/cors-everywhere/
 #### Microsoft Edge
 
 https://microsoftedge.microsoft.com/addons/detail/allow-cors-accesscontro/bhjepjpgngghppolkjdhckmnfphffdag
+
+![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
+
+#### Brought to you by [Teknologi Umum](https://github.com/teknologi-umum)
