@@ -14,6 +14,7 @@ Mayoritas CORS terjadi di browser dan disebabkan oleh _server/backend/api_ yang 
   - [HTTP](https://github.com/lamualfa/cors_id#http)
   - [Express](https://github.com/lamualfa/cors_id#express)
   - [Fastify](https://github.com/lamualfa/cors_id#fastify)
+  - [Next.js](https://github.com/lamualfa/cors_id#nextjs)
 - [PHP](https://github.com/lamualfa/cors_id#php)
   - [Laravel](https://github.com/lamualfa/cors_id#laravel)
 - [Cara cepat](https://github.com/lamualfa/cors_id#cara-cepat)
@@ -153,7 +154,68 @@ Buka file `config/cors.php` dan tambahkan konfigurasi berikut:
 'allowed_origins' => ['http://domain-website-kamu.com']
 ```
 
-####
+### Next.js API
+
+https://github.com/yonycalsin/nextjs-cors
+
+```js
+import NextCors from "nextjs-cors"
+
+async function handler(req, res) {
+  await NextCors(req, res, {
+    // Ganti domain ini
+    origin: "http://domain-website-kamu.com",
+    methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
+  })
+
+  //  letakkan kode anda disini
+}
+```
+
+![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
+
+## PHP
+
+### Laravel
+
+#### Versi 8, 7, 6 dan kebawah
+
+https://github.com/fruitcake/laravel-cors
+
+##### Install `laravel-cors`
+
+```bash
+composer require fruitcake/laravel-cors
+```
+
+##### Tambahkan middleware
+
+Buka file `app/Http/Kernel.php`, dan tambahkan middleware `\Fruitcake\Cors\HandleCors::class` di bagian paling atas `$middleware`.
+
+###### contoh
+
+```php
+protected $middleware = [
+  \Fruitcake\Cors\HandleCors::class,
+    // ...
+];
+```
+
+##### Buat file konfigurasi
+
+```bash
+php artisan vendor:publish --tag="cors"
+```
+
+##### Konfigurasi CORS
+
+Buka file `config/cors.php` dan tambahkan konfigurasi berikut:
+
+```php
+'allowed_origins' => ['http://domain-website-kamu.com']
+```
+
+![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
 
 ## Cara cepat
 
