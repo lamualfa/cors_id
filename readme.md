@@ -1,27 +1,30 @@
 # Panduan singkat mengatasi CORS di berbagai macam aplikasi
 
-Mayoritas CORS terjadi di browser dan disebabkan oleh _server/backend/api_ yang kamu gunakan di website tersebut. Untuk mengatasi nya, silahkan ikuti panduan singkat berikut. Pilih berdasarkan teknologi _server/backend/api_ gunakan.
+![CORS](https://user-images.githubusercontent.com/39755201/164412362-7117f181-df69-409d-95b7-eb46fe5e54d9.png)
 
-### FAQ
+Mayoritas [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) terjadi di browser dan disebabkan oleh _server/backend/api_ yang kamu gunakan di website tersebut. Untuk mengatasi nya, silahkan ikuti panduan singkat berikut. Pilih berdasarkan teknologi yang _server/backend/api_ kamu gunakan.
+
+![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
+
+## FAQ
 
 - Saya menggunakan _server/backend/api_ eksternal? **[Gunakan cara cepat](#cara-cepat)**.
 - Saya tidak tahu teknologi apa yang _server/backend/api_ eksternal saya gunakan? **[Gunakan cara cepat](#cara-cepat)**.
 - Teknologi yang saya gunakan belum ada? **[Buat issue](https://github.com/lamualfa/cors_id/issues/new)** atau **[buat pull request](https://github.com/lamualfa/cors_id/pulls)** jika berkenan.
 
-### Pintasan
+## Pintasan
 
 - [Node.js](https://github.com/lamualfa/cors_id#nodejs)
   - [HTTP](https://github.com/lamualfa/cors_id#http)
   - [Express](https://github.com/lamualfa/cors_id#express)
   - [Fastify](https://github.com/lamualfa/cors_id#fastify)
+  - [Next.js](https://github.com/lamualfa/cors_id#nextjs)
 - [PHP](https://github.com/lamualfa/cors_id#php)
   - [Laravel](https://github.com/lamualfa/cors_id#laravel)
 - [Cara cepat](https://github.com/lamualfa/cors_id#cara-cepat)
   - [Ekstensi browser](https://github.com/lamualfa/cors_id#ekstensi-browser)
 
-![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
-
-## Node.js
+## Informasi
 
 ###### Development
 
@@ -30,6 +33,10 @@ Ganti `http://domain-website-kamu.com` dengan `http://localhost:[PORT_WEBSITE_KA
 ###### Production
 
 Ganti `http://domain-website-kamu.com` dengan domain dari website kamu.
+
+![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
+
+## Node.js
 
 ### HTTP
 
