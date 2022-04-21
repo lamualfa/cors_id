@@ -14,7 +14,6 @@ Mayoritas CORS terjadi di browser dan disebabkan oleh _server/backend/api_ yang 
   - [HTTP](https://github.com/lamualfa/cors_id#http)
   - [Express](https://github.com/lamualfa/cors_id#express)
   - [Fastify](https://github.com/lamualfa/cors_id#fastify)
-  - [Next.js](https://github.com/lamualfa/cors_id#nextjs)
 - [PHP](https://github.com/lamualfa/cors_id#php)
   - [Laravel](https://github.com/lamualfa/cors_id#laravel)
 - [Cara cepat](https://github.com/lamualfa/cors_id#cara-cepat)
