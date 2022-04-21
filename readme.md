@@ -2,15 +2,18 @@
 
 Mayoritas CORS terjadi di browser dan disebabkan oleh server/backend/api yang kamu gunakan di website tersebut. Untuk mengatasi nya, silahkan ikuti panduan singkat berikut. Pilih berdasarkan teknologi apa yang kamu gunakan di server/backend/api kamu.
 
+- Saya menggunakan server/backend/api eksternal? **[Gunakan cara cepat](#cara-cepat)**.
+- Saya tidak tahu teknologi apa yang server/backend/api eksternal saya gunakan? **[Gunakan cara cepat](#cara-cepat)**.
+
 ![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
 
 ## Node.js
 
-**`Development`**
+##### Development
 
 Ganti `http://domain-website-kamu.com` dengan `http://localhost:[PORT_WEBSITE_KAMU]`.
 
-**`Production`**
+##### Production
 
 Ganti `http://domain-website-kamu.com` dengan domain dari website kamu.
 
@@ -74,3 +77,25 @@ fastify.register(require("fastify-cors"), {
   origin: "http://domain-website-kamu.com",
 })
 ```
+
+## Cara cepat
+
+##### Production
+
+Jangan gunakan cara ini di mode production.
+
+### Ekstensi browser
+
+Install ekstensi berikut untuk menyelesaikan masalah CORS dengan instan.
+
+#### Chrome atau Brave
+
+https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf
+
+#### Firefox
+
+https://addons.mozilla.org/id/firefox/addon/cors-everywhere/
+
+#### Microsoft Edge
+
+https://microsoftedge.microsoft.com/addons/detail/allow-cors-accesscontro/bhjepjpgngghppolkjdhckmnfphffdag
