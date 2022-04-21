@@ -1,5 +1,8 @@
 # Panduan singkat mengatasi CORS di berbagai macam aplikasi
 
+![CORS](https://user-images.githubusercontent.com/39755201/164412362-7117f181-df69-409d-95b7-eb46fe5e54d9.png)
+
+
 Mayoritas CORS terjadi di browser dan disebabkan oleh _server/backend/api_ yang kamu gunakan di website tersebut. Untuk mengatasi nya, silahkan ikuti panduan singkat berikut. Pilih berdasarkan teknologi apa yang kamu gunakan di _server/backend/api_ kamu.
 
 ![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
