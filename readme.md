@@ -8,6 +8,15 @@ Mayoritas CORS terjadi di browser dan disebabkan oleh _server/backend/api_ yang 
 - Saya tidak tahu teknologi apa yang _server/backend/api_ eksternal saya gunakan? **[Gunakan cara cepat](#cara-cepat)**.
 - Teknologi yang saya gunakan belum ada? **[Buat issue](https://github.com/lamualfa/cors_id/issues/new)** atau **[buat pull request](https://github.com/lamualfa/cors_id/pulls)** jika berkenan.
 
+### Pintasan
+
+- [Node.js](https://github.com/lamualfa/cors_id#nodejs)
+  - [HTTP](https://github.com/lamualfa/cors_id#http)
+  - [Express](https://github.com/lamualfa/cors_id#express)
+  - [Fastify](https://github.com/lamualfa/cors_id#fastify)
+- [Cara cepat](https://github.com/lamualfa/cors_id#cara-cepat)
+  - [Ekstensi browser](https://github.com/lamualfa/cors_id#ekstensi-browser)
+
 ![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
 
 ## Node.js
