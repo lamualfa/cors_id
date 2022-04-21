@@ -1,11 +1,18 @@
 # Panduan singkat mengatasi CORS di berbagai macam aplikasi
 
-Mayoritas CORS terjadi di browser dan disebabkan oleh server yang kamu gunakan di website tersebut. Untuk mengatasi nya, silahkan ikuti panduan singkat berikut. Pilih teknologi apa yang kamu gunakan di server/backend/api kamu.
+Mayoritas CORS terjadi di browser dan disebabkan oleh server/backend/api yang kamu gunakan di website tersebut. Untuk mengatasi nya, silahkan ikuti panduan singkat berikut. Pilih berdasarkan teknologi apa yang kamu gunakan di server/backend/api kamu.
+
+![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
 
 ## Node.js
 
-- Saat development, ganti `http://domain-website-kamu.com` dengan `http://localhost:[PORT_WEBSITE_KAMU]`.
-- Saat production, ganti `http://domain-website-kamu.com` dengan domain dari website kamu.
+**`Development`**
+
+Ganti `http://domain-website-kamu.com` dengan `http://localhost:[PORT_WEBSITE_KAMU]`.
+
+**`Production`**
+
+Ganti `http://domain-website-kamu.com` dengan domain dari website kamu.
 
 ### HTTP
 
