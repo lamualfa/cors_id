@@ -18,7 +18,7 @@ Mayoritas [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) terjadi
   - [HTTP](https://github.com/lamualfa/cors_id#http)
   - [Express](https://github.com/lamualfa/cors_id#express)
   - [Fastify](https://github.com/lamualfa/cors_id#fastify)
-  - [Next.js](https://github.com/lamualfa/cors_id#nextjs)
+  - [Next.js](https://github.com/lamualfa/cors_id#nextjs-api)
 - [PHP](https://github.com/lamualfa/cors_id#php)
   - [Laravel](https://github.com/lamualfa/cors_id#laravel)
 - [Cara cepat](https://github.com/lamualfa/cors_id#cara-cepat)
