@@ -1,10 +1,10 @@
 # Panduan singkat mengatasi CORS di berbagai macam aplikasi
 
-![CORS](https://user-images.githubusercontent.com/39755201/164412362-7117f181-df69-409d-95b7-eb46fe5e54d9.png)
+![CORS](./header.png)
 
 Mayoritas [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) terjadi di browser dan disebabkan oleh _server/backend/api_ yang kamu gunakan di website tersebut. Untuk mengatasi nya, silahkan ikuti panduan singkat berikut.
 
-![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
+![hr](./hr.png)
 
 ## FAQ
 
@@ -12,15 +12,15 @@ Mayoritas [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) terjadi
 - Saya tidak tahu teknologi apa yang _server/backend/api_ eksternal saya gunakan? **[Gunakan cara cepat](#cara-cepat)**.
 - Teknologi yang saya gunakan belum ada? **[Buat issue](https://github.com/lamualfa/cors_id/issues/new)** atau **[buat pull request](https://github.com/lamualfa/cors_id/pulls)** jika berkenan.
 
-![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
+![hr](./hr.png)
 
 ## Cara membaca error CORS
 
-![image](https://user-images.githubusercontent.com/39755201/170202328-dc47a4b7-394f-43c5-89a6-a442ddc270e0.png)
+![image](./error.png)
 
 Pada contoh diatas berarti server yang bermasalah adalah server dengan domain `http://localhost:5000`. Server dengan domain tersebut yang harus diperbaiki menggunakan solusi-solusi yang saya sediakan dibawah.
 
-![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
+![hr](./hr.png)
 
 ## Informasi
 
@@ -34,27 +34,27 @@ Ganti `http://domain-website-kamu.com` dengan `http://localhost:[PORT_WEBSITE_KA
 
 Ganti `http://domain-website-kamu.com` dengan domain dari website kamu.
 
-![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
+![hr](./hr.png)
 
 ## Pintasan
 
 ###### Pilih berdasarkan teknologi yang _server/backend/api_ kamu gunakan.
 
-- [Node.js](https://github.com/lamualfa/#nodejs)
-  - [HTTP](https://github.com/lamualfa/cors_id#http)
-  - [Express](https://github.com/lamualfa/cors_id#express)
-  - [Fastify](https://github.com/lamualfa/cors_id#fastify)
-  - [Next.js](https://github.com/lamualfa/cors_id#nextjs-api)
-- [PHP](https://github.com/lamualfa/cors_id#php)
-  - [Laravel](https://github.com/lamualfa/cors_id#laravel)
+- [Node.js](#nodejs)
+  - [HTTP](#http)
+  - [Express](#express)
+  - [Fastify](#fastify)
+  - [Next.js](#nextjs-api)
+- [PHP](#php)
+  - [Laravel](#laravel)
 - [Go](#go)
   - [net/http](#nethttp)
   - [Gin](#gin)
   - [Chi](#chi)
-- [Cara cepat](https://github.com/lamualfa/cors_id#cara-cepat)
-  - [Ekstensi browser](https://github.com/lamualfa/cors_id#ekstensi-browser)
+- [Cara cepat](#cara-cepat)
+  - [Ekstensi browser](#ekstensi-browser)
 
-![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
+![hr](./hr.png)
 
 ## Node.js
 
@@ -137,7 +137,7 @@ async function handler(req, res) {
 }
 ```
 
-![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
+![hr](./hr.png)
 
 ## PHP
 
@@ -180,7 +180,7 @@ Buka file `config/cors.php` dan tambahkan konfigurasi berikut:
 'allowed_origins' => ['http://domain-website-kamu.com']
 ```
 
-![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
+![hr](./hr.png)
 
 
 ## Go
@@ -325,6 +325,6 @@ https://addons.mozilla.org/id/firefox/addon/cors-everywhere/
 
 https://microsoftedge.microsoft.com/addons/detail/allow-cors-accesscontro/bhjepjpgngghppolkjdhckmnfphffdag
 
-![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
+![hr](./hr.png)
 
 #### Brought to you by [Teknologi Umum](https://github.com/teknologi-umum)
