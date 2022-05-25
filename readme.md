@@ -40,13 +40,17 @@ Ganti `http://domain-website-kamu.com` dengan domain dari website kamu.
 
 ###### Pilih berdasarkan teknologi yang _server/backend/api_ kamu gunakan.
 
-- [Node.js](https://github.com/lamualfa/cors_id#nodejs)
+- [Node.js](https://github.com/lamualfa/#nodejs)
   - [HTTP](https://github.com/lamualfa/cors_id#http)
   - [Express](https://github.com/lamualfa/cors_id#express)
   - [Fastify](https://github.com/lamualfa/cors_id#fastify)
   - [Next.js](https://github.com/lamualfa/cors_id#nextjs-api)
 - [PHP](https://github.com/lamualfa/cors_id#php)
   - [Laravel](https://github.com/lamualfa/cors_id#laravel)
+- [Go](#go)
+  - [net/http](#nethttp)
+  - [Gin](#gin)
+  - [Chi](#chi)
 - [Cara cepat](https://github.com/lamualfa/cors_id#cara-cepat)
   - [Ekstensi browser](https://github.com/lamualfa/cors_id#ekstensi-browser)
 
