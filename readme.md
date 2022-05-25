@@ -178,6 +178,127 @@ Buka file `config/cors.php` dan tambahkan konfigurasi berikut:
 
 ![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
 
+
+## Go
+
+### net/http
+
+#### Tanpa third-party package
+
+```go
+func CORS(next http.HandlerFunc) http.HandlerFunc {
+  return func(w http.ResponseWriter, r *http.Request) {
+    w.Header().Add("Access-Control-Allow-Origin", "http://domain-website-kamu.com")
+    w.Header().Add("Access-Control-Allow-Credentials", "true")
+    w.Header().Add("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
+
+    if r.Method == "OPTIONS" {
+        http.Error(w, "No Content", http.StatusNoContent)
+        return
+    }
+
+    next(w, r)
+  }
+}
+
+func main() {
+  router := http.NewServeMux()
+
+  // Pasang routing kamu disini
+
+  http.ListenAndServe(":8080", CORS(router))
+}
+```
+
+#### Dengan third-party package
+
+Menggunakan [rs/cors](https://github.com/rs/cors)
+
+```go
+package main
+
+import (
+    "net/http"
+
+    "github.com/rs/cors"
+)
+
+func main() {
+    router := http.NewServeMux()
+    // Pasang routing kamu disini
+
+    corsMiddleware := cors.New(cors.Options{
+        AllowedOrigins: []string{"http://domain-website-kamu.com"},
+        AllowCredentials: true,
+        AllowedMethods: []string{"GET", "POST", "OPTIONS", "PUT", "DELETE"},
+        // Enable Debugging for testing, consider disabling in production
+        Debug: true,
+    })
+
+    http.ListenAndServe(":8080", corsMiddleware(router))
+}
+```
+
+### Gin
+
+Dengan [gin-contrib/cors](https://github.com/gin-contrib/cors)
+
+```go
+package main
+
+import (
+  "time"
+
+  "github.com/gin-contrib/cors"
+  "github.com/gin-gonic/gin"
+)
+
+func main() {
+  router := gin.Default()
+
+  router.Use(cors.New(cors.Config{
+    AllowOrigins:     []string{"http://domain-website-kamu.com"},
+    AllowMethods:     []string{"GET", "POST", "OPTIONS", "PUT", "DELETE"},
+    AllowCredentials: true,
+    MaxAge: 12 * time.Hour,
+  }))
+
+  // Routing kamu disini
+
+  router.Run()
+}
+```
+
+### Chi
+
+Dengan [go-chi/cors](https://github.com/go-chi/cors)
+
+```go
+package main
+
+import (
+  "net/http"
+
+  "github.com/go-chi/chi/v5"
+  "github.com/go-chi/cors"
+)
+
+func main() {
+  r := chi.NewRouter()
+  
+  r.Use(cors.Handler(cors.Options{
+    AllowedOrigins:   []string{"http://domain-website-kamu.com"},
+    AllowedMethods:   []string{"GET", "POST", "OPTIONS", "PUT", "DELETE"},
+    AllowCredentials: true,
+    MaxAge:           2592000, 
+  }))
+
+  // Routing kamu disini
+
+  http.ListenAndServe(":8080", r)
+}
+```
+
 ## Cara cepat
 
 ###### Production
