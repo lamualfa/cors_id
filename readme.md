@@ -12,6 +12,30 @@ Mayoritas [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) terjadi
 - Saya tidak tahu teknologi apa yang _server/backend/api_ eksternal saya gunakan? **[Gunakan cara cepat](#cara-cepat)**.
 - Teknologi yang saya gunakan belum ada? **[Buat issue](https://github.com/lamualfa/cors_id/issues/new)** atau **[buat pull request](https://github.com/lamualfa/cors_id/pulls)** jika berkenan.
 
+![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
+
+## Cara membaca error CORS
+
+![image](https://user-images.githubusercontent.com/39755201/170202328-dc47a4b7-394f-43c5-89a6-a442ddc270e0.png)
+
+Pada contoh diatas berarti server yang bermasalah adalah server dengan domain `http://localhost:5000`. Server dengan domain tersebut yang harus diperbaiki menggunakan solusi-solusi yang saya sediakan dibawah.
+
+![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
+
+## Informasi
+
+Domain `http://domain-website-kamu.com` adalah domain dari server frontend yang kamu gunakan. Bukan domain dari _server/backend/api_ yang bermasalah tadi.
+
+###### Development
+
+Ganti `http://domain-website-kamu.com` dengan `http://localhost:[PORT_WEBSITE_KAMU]`.
+
+###### Production
+
+Ganti `http://domain-website-kamu.com` dengan domain dari website kamu.
+
+![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
+
 ## Pintasan
 
 ###### Pilih berdasarkan teknologi yang _server/backend/api_ kamu gunakan.
@@ -25,16 +49,6 @@ Mayoritas [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) terjadi
   - [Laravel](https://github.com/lamualfa/cors_id#laravel)
 - [Cara cepat](https://github.com/lamualfa/cors_id#cara-cepat)
   - [Ekstensi browser](https://github.com/lamualfa/cors_id#ekstensi-browser)
-
-## Informasi
-
-###### Development
-
-Ganti `http://domain-website-kamu.com` dengan `http://localhost:[PORT_WEBSITE_KAMU]`.
-
-###### Production
-
-Ganti `http://domain-website-kamu.com` dengan domain dari website kamu.
 
 ![hr](https://user-images.githubusercontent.com/39755201/159233055-3bd55a37-7284-46ad-b759-5ab0c13b3828.png)
 
