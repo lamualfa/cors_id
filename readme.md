@@ -51,6 +51,8 @@ Ganti `http://domain-website-kamu.com` dengan domain dari website kamu.
   - [net/http](#nethttp)
   - [Gin](#gin)
   - [Chi](#chi)
+  - [Fiber](#fiber)
+  - [Echo](#echo)
 - [Cara cepat](#cara-cepat)
   - [Ekstensi browser](#ekstensi-browser)
 
@@ -300,6 +302,62 @@ func main() {
   // Routing kamu disini
 
   http.ListenAndServe(":8080", r)
+}
+```
+
+### Fiber
+
+Dengan [fiber/middleware/cors](https://github.com/gofiber/fiber/tree/master/middleware/cors)
+
+```go
+package main
+
+import (
+	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
+)
+
+func main() {
+	app := fiber.New()
+
+	app.Use(cors.New(cors.Config{
+		AllowOrigins:     "http://domain-website-kamu.com",
+		AllowMethods:     "GET, POST, OPTIONS, PUT, DELETE",
+		AllowCredentials: true,
+		MaxAge:           2592000,
+	}))
+
+	// Routing kamu disini
+
+	app.Listen(":8080")
+}
+```
+
+### Echo
+
+Dengan [echo/middleware](https://github.com/labstack/echo/blob/master/middleware/cors.go)
+
+```go
+package main
+
+import (
+	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
+)
+
+func main() {
+	e := echo.New()
+
+	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
+		AllowOrigins:     []string{"http://domain-website-kamu.com"},
+		AllowMethods:     []string{"GET", "POST", "OPTIONS", "PUT", "DELETE"},
+		AllowCredentials: true,
+		MaxAge:           2592000,
+	}))
+
+	// Routing kamu disini
+
+	e.Start(":8080")
 }
 ```
 
